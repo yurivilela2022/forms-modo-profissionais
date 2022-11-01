@@ -1,0 +1,232 @@
+modo-content-height
+{
+    height: 100vh;
+    margin:0;
+}
+
+.modo-content-height .elementor-widget-wrap
+{
+    padding: 0px !important;
+}
+
+.modo-slide
+{
+    padding:0 5%;
+    text-align:left;
+}
+
+.modo-slider,
+.modo-slider .tm-slider,
+.modo-slider .tm-slider .slick-list,
+.modo-slider .tm-slider .slick-list .slick-track,
+.modo-slider .tm-slider .slick-list .slick-track .slick-slide{
+    height: 100vh;
+    margin:0;
+    padding: 0;
+}
+
+.modo-first-section .modo-slider,
+.modo-first-section .modo-slider .tm-slider,
+.modo-first-section .modo-slider .tm-slider .slick-list,
+.modo-first-section .modo-slider .tm-slider .slick-list .slick-track,
+.modo-first-section .modo-slider .tm-slider .slick-list .slick-track .slick-slide{
+    height: 90vh;
+    margin:0;
+    padding: 0;
+}
+
+
+
+.modo-slider .slick-dots
+{
+    height:5vh;
+}
+
+.modo-slider .slick-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modo-slide img
+{
+    width: 80%;
+}
+
+.modo-slide h1
+{
+    font-size:4vh;
+}
+
+.modo-slide p
+{
+    font-size:2vh;
+    line-height: normal;
+}
+
+.modo-slide .carousel_btn_span
+{
+    text-align:center;
+}
+
+.modo-slide .carousel_btn_span a
+{
+    font-size: 2.5vh!important;
+    margin-top:1vh;
+}
+
+@media(min-width:764px)
+{ 
+    .modo-slide
+    {
+        padding:0 10%;    
+    }
+    
+    .modo-section .slick-arrow
+    {
+        display:none !important;
+    } 
+    
+    .modo-slider .ultimate-slide-img img
+    {
+        width: 60%;
+    }
+    
+    .modo-slide h1
+    {
+        font-size:4.5vh;
+    }
+    
+    .modo-slide  p
+    {
+        font-size:2.5vh;
+    }
+    
+    .modo-slide .carousel_btn_span a
+    {
+        font-size: 3vh!important;
+    }
+}
+
+
+
+@media(min-width:1024px)
+{
+    
+    .modo-section .slick-arrow
+    {
+        display:block !important;
+    }
+    
+    .slide-professional-2 .content-section h1 {
+        margin-bottom:-5vh;
+    }
+    
+    .slide-professional-3 .content-section h1 {
+        margin-bottom:-5vh;
+    }
+    
+    .slide-professional-3 .content-section p {
+        margin-bottom:-3vh;
+    }
+    
+    .slide-professional-3 .content-section .carousel_btn_span {
+        margin-top:50px;
+    }
+    
+    .slide-ensina-3 .content-section h1 {
+        margin-bottom:-4vh;
+    }
+    
+  
+    
+}
+
+
+
+@media(orientation:landscape)
+{
+    
+    .modo-slide
+    {
+        padding:0 5%;    
+    }
+    
+    .modo-slide{
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .modo-slide span
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .modo-slide .carousel_btn_span
+    {
+        margin-top:2vh;
+    }
+    
+    .modo-slide .carousel_btn_span
+    {
+        text-align:left!important;
+    }
+    
+    
+    .modo-slider .ultimate-slide-img img
+    {
+        width: 80%;
+    }
+    
+    .slide-empresas-1 a,
+    .slide-empresas-2 a,
+    .slide-empresas-3 a,
+    .slide-ensina-1 a,
+    .slide-ensina-2 a,
+    .slide-ensina-3 a
+    {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    
+    /*
+    .slide-professional-2 a,
+    .slide-empresas-1 a,
+    .slide-empresas-3 a,
+    .slide-ensina-1 a
+    {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .slide-professional-2 .content-section,
+    .slide-empresas-1 .content-section,
+    .slide-empresas-3 .content-section,
+    .slide-ensina-1 .content-section
+    
+    {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    */
+}
+
+
+
+
+@media(orientation:landscape) and (min-width:1024px)
+{
+    
+    .modo-slide
+    {
+        padding:0 10%;    
+    }
+
+
+
+}

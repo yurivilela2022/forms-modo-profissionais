@@ -3,14 +3,34 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   
 
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    #img_circular {
+       border-radius: 200px
+    }
+</style>
 
+
+<ul class="nav justify-content-center navbar-dark bg-primary">
+    <li class="nav-item">
+      <a class="navbar-brand">Descritivo de profissional PcD</a>
+    </li>
+</ul>
+<br>
 <form>
     <div>
        <div>
+        <div class="text-center">
+            <img src="data:image/png;base64,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" class="border border-3 border-primary" id="img_circular">            
+        </div>
+        <br>
             <h4>Você é uma pessoa com deficiência?</h4>
        </div> 
-       <div>
-            <div>
+       <div >
+            <div >
                 <input class="form-check-input" type="checkbox" id="deficienciaFisica" value="" aria-label="..." onclick="validaChek()">
                 <label class="form-check-label">
                     Possuo deficiência física
