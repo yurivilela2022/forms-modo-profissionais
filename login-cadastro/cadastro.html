@@ -44,39 +44,48 @@
       <div class="container">
         <div class="row">
           <form>
-            <br>
             <div>
               <label ><b>Nome</b></label>
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control borda" id="nome" placeholder="Digite seu nome">
+              <input type="text" class="form-control borda" id="nome" placeholder="">
+            </div>
+            <div>
+              <label ><b>E-mail</b></label>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control borda" id="email" placeholder="">
             </div>
             <div>
               <label ><b>Senha</b></label>
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control borda" id="senha" placeholder="Digite sua senha">
-            </div >
-            <br>
-            <div class="text-center">
-              <button id ="btform"class=" w-50 btn btn-lg" type="submit"  style="background-color: yellow;">Entrar</button>
-
+              <input type="password" class="form-control borda" id="senha" placeholder="">
             </div>
+            <div>
+              <label ><b>Confirmar senha</b></label>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control borda" id="confsenha" placeholder="">
+            </div>
+            <div class="text-center">
+              <p id ="termo"style="color:white ;">Ao fazer o cadastro, você concorda com os <b>Termos de Privacidade </b> da Modo.</p>
+            </div>
+            <button id ="btform"class="w-100 btn btn-lg btn-primary" type="submit" disabled >Cadastre-se</button>
           </form>
           <div>
-            <br>
-
-            <p class="text-center" id = "textCadastro"style="color:white ;">____________ <b style="color:white ;">Ou entrar com</b> ____________</p>
-            <br>
+            <p class="text-center" id = "textCadastro"style="color:white ;">____________ <b style="color:white ;">Ou cadastre-se com</b> ____________</p>
 
           </div>
-          <div class="mb-3 text-center"> 
+          <div class="mb-3 text-center">
+            
             <button type="button" class="g-signin2 borda btn btn-light">Google</button>
             <button type="button" class="borda btn btn-light">Linkedin</button>
             <button type="button" class="borda btn btn-light">Facebook</button>
           </div>
+          <br>
           <div class="text-center">
-            <p id="textLogin" style="color:white ;" >Ainda não está na modo? <a onclick="editarElemento()" style="color:white ;">Cadastra-se </a></p>
+            <p id="textLogin" style="color:white ;" >Já está na modo? <a onclick="editarElemento()" style="color:white ;">Faça login </a></p>
           </div>
         </div>
   
@@ -85,3 +94,17 @@
     </main>   
   </body>
 </html>
+
+
+
+<script type="text/javascript">
+  function editarElemento(){
+    
+    var confsenha = document.getElementById('textCadastro');
+    var buton = document.getElementById('btform');
+    var termotxt = document.getElementById('termo');
+    var textLogin = document.getElementById('textLogin');
+  }
+
+}
+</script>
